@@ -1,0 +1,424 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: whitesmoke;
+    font-family:   Geneva, Verdana, sans-serif
+}
+
+.mobile-nav-section{
+    display: none;
+}
+
+.intro-section{
+    background:linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-bottom-left-radius: 40px;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+.nav-section{
+   display: flex;
+}
+
+.navlinks{
+    display: flex;
+    color: white;
+    list-style: none;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.navlink{
+  margin-right: 20px;
+}
+#logo-img{
+    margin-right: 30px;
+}
+
+.navlinks-right{
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#signup{
+    margin-left: 10px;
+    color: hsl(356, 100%, 66%);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+}
+
+.header-nav{
+   text-align: center;
+   color: white;
+}
+
+.header-btns{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-btn{
+    margin: 7px;
+}
+
+#signup-btn{
+    color: hsl(356, 100%, 66%);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+}
+
+#login-btn{
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: hsl(356, 100%, 66%);
+}
+
+#design{
+    color: black;
+    text-align: center;
+}
+
+.illustration-one{
+    display: flex;
+    margin-left: 5%;
+}
+
+#left-side, #right-side{
+    width: 50%;
+    text-align: center;
+    display: block;
+}
+
+.illustration-img{
+    width: 100%;
+}
+
+.illustration-two{
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 30px;
+    display: flex;
+   background-color: hsl(237, 23%, 32%);
+   height: 200px;
+   margin-bottom: 5%;
+    
+}
+
+
+
+
+#phones{
+    width: 50%;
+}
+
+.txt{
+    color: white;
+    justify-content: start;
+    
+}
+
+.illustration-three{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.left-side-img, .right-side-txt{
+    width: 50%;
+}
+
+.laptop{
+    width: 100%;
+}
+
+
+footer{
+    background-color: hsl(237, 17%, 21%);
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    border-top-right-radius: 50px;
+    cursor: pointer;
+}
+
+.footer-header{
+    width: 20%;
+    margin-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    list-style: none;
+}
+
+.header{
+    margin-bottom: 25px;
+}
+
+#mobile-top-side{
+    display: none;
+}
+
+.leftside-mobile{
+    display: none;
+}
+
+.modal{
+    display: none;
+}
+
+
+/*TABLETS*/
+@media screen and (min-height: 950px) {
+    .illustration-img{
+        width: 100%;
+    }
+
+    #phones{
+        width: 100%;
+    }
+
+    .illustration-two{
+        height: 300px;
+    }
+
+    article{
+        margin-bottom: 5%;
+    }
+
+    .illustration-three{
+        margin-top: 15%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 640px){
+    .navlink{
+        margin-right: 15px;
+    }
+    #logo-img{
+        margin-right: 20px;
+    }
+}
+
+
+
+/*MOBILE SCREENS*/
+
+@media screen and (max-width: 599px) {
+.mobile-nav-section{
+    display: block;
+    background:linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: white;
+}
+
+
+.navlinks-mobile{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-section{
+  align-items: center;
+}
+
+#menu-link{
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.header-nav-mobile{
+    text-align: center;
+}
+
+.header-btn-mobile{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#signup-btn-mobile{
+    color: hsl(356, 100%, 66%);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+}
+
+#login-btn-mobile{
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: hsl(356, 100%, 66%);
+}
+
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    transition: 0.7s;
+
+}
+
+.modal-background{
+    width: 100%;
+    height: 80%;
+    background:linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-bottom-left-radius: 50px;
+}
+
+#modal-img{
+    position: absolute;
+    left: 10px;
+    top: 1%;
+}
+
+
+#closeBtn{
+  position: absolute;
+  right: 10px;
+  top: 1%;
+}
+
+.modal-links{
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 0 2px;
+    list-style: none;
+    text-align: center;
+}
+.modal-link{
+    margin-top: 10%;
+}
+
+hr{
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+#login-modal{
+    margin-bottom: 5%;
+}
+
+#signup-modal{
+    background-color: hsl(356, 100%, 66%);
+    position: relative;
+    left: 50%;
+    transform:translate(-50%) ;
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    
+}
+
+.intro-section{
+    display: none;
+}
+
+    .illustration-one{
+        display: block;
+        margin-left: 5%;
+    }
+
+
+    #left-side{
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .illustration-img{
+        display: none;
+    }
+
+    #mobile-top-side{
+        display:block;
+    }
+
+    .illustration-img-mobile{
+        width: 100%;
+    }
+
+    .illustration-two{
+        display: block;
+        height: auto;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #phones{
+        width: 50%;
+       
+    }
+
+    .illustration-three{
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+
+    .right-side-txt{
+        width: 100%;
+    }
+
+
+    .left-side-img{
+        display: none;
+    }
+
+    .leftside-mobile{
+        display: block;
+    }
+
+
+ footer{
+    display: block;
+    text-align: center;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.footer-header{
+    width: 100%;
+    margin-left: 0%;
+}
+
+}
+
+
+
+
+
+
+
